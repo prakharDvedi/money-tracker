@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+main {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #76ff03;
+  margin-bottom: 30px;
+}
+
+h1 span {
+  font-size: 1.2rem;
+  color: #b2ff59;
+}
+
+form {
+  margin-bottom: 40px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+input {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2b2b2b;
+  color: #e0e0e0;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+input:focus {
+  outline: none;
+  background-color: #333;
+  box-shadow: 0 0 0 2px #76ff03;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #76ff03;
+  color: #1e1e1e;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #64dd17;
+}
+
+.Transactions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Transactions > .Transactions {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.left .name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.left .description {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-top: 4px;
+}
+
+.right {
+  text-align: right;
+}
+
+.right .amount {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ff5252;
+}
+
+.right .date {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 4px;
+}
+
+/* ✅ Income transaction style */
+.Transactions.income .right .amount {
+  color: #00e676;
+}
+
+.balance {
+  font-size: 3rem;
+}
+
+.positive {
+  color: rgb(69, 231, 69);
+}
+
+.negative {
+  color: red;
+}
